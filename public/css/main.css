@@ -1,32 +1,29 @@
 html {
   background: -webkit-radial-gradient(white, mediumturquoise);
   height:100%;
+  margin:0;
+  padding:0;
 }
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
-  /*width: 10px*/
+  margin-top: 5em;
 
 }
 main div button{
   font-size: 2em;
 }
-main div.deleteButton{
-  /*width:10em;*/
 
-}
-main div.counter{
-  /*width: 11em*/
-}
 
 main div p{
   font-size: 10em;
   font-family: Papyrus, fantasy;
   font-weight: 100;
   width: 3em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main div button.add {
