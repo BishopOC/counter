@@ -34,8 +34,5 @@ var counterApp = {
     counterApp.render();
   }
 
-
-
-
 };
 counterApp.start();
