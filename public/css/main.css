@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  /*width: 10px*/
+
+}
+main div button{
+  font-size: 2em;
+}
+main div.deleteButton{
+  width:10em;
+
+}
+main div.counter{
+  width: 11em
+}
+
+main div p{
+  font-size: 10em;
+}
+
+main div button {
+  width:2em;
+  height: 2em;
+  border-radius: 10px;
+  border-style: none;
+}
