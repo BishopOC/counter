@@ -1,3 +1,7 @@
+html {
+  background: -webkit-radial-gradient(white, mediumturquoise);
+  height:100%;
+}
 main {
   display: flex;
   justify-content: center;
@@ -10,20 +14,63 @@ main div button{
   font-size: 2em;
 }
 main div.deleteButton{
-  width:10em;
+  /*width:10em;*/
 
 }
 main div.counter{
-  width: 11em
+  /*width: 11em*/
 }
 
 main div p{
   font-size: 10em;
+  font-family: Papyrus, fantasy;
+  font-weight: 100;
+  width: 3em;
+  text-align: center;
 }
 
-main div button {
+main div button.add {
   width:2em;
   height: 2em;
+  border-width: 7px;
   border-radius: 10px;
-  border-style: none;
+  border-style: solid;
+  border-color: lightblue #76B7C9 lightblue #EAFAFF;
+  font-size: 4em;
+  background: -webkit-linear-gradient(left, #D6F5F4, mediumturquoise);
+  outline: none;
+  box-shadow: 9px 0px 15px 5px #477684;
+}
+main div button.delete {
+  width:2em;
+  height: 2em;
+  border-width: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: lightblue #EAFAFF lightblue #76B7C9;
+  font-size: 4em;
+  background: -webkit-linear-gradient(left, mediumturquoise, #D6F5F4);
+  outline: none;
+  box-shadow: -9px 0px 15px 5px #477684;
+}
+
+main div button.add:active {
+  border-width: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4B8EA0 #63B5CC #4B8EA0 #2B5660;
+  background: -webkit-linear-gradient(left, #64AAA8, #9DEAE8);
+  outline: none;
+  box-shadow: none;
+
+}
+main div button.delete:active {
+  border-width: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4B8EA0 #2B5660 #4B8EA0 #63B5CC;
+  background: -webkit-linear-gradient(left, #9DEAE8, #64AAA8);
+  outline: none;
+  box-shadow: none;
+
 }

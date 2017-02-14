@@ -1,34 +1,34 @@
-var counter = {
-  updatedCounter: 0,
+var counterApp = {
+  counter: 0,
   start: function(){
-    counter.cacheDom();
-    counter.addEventListeners();
-    counter.render();
+    counterApp.cacheDom();
+    counterApp.addEventListeners();
+    counterApp.render();
   },
   cacheDom: function(){
-    counter.deleteButton = document.querySelector('.delete');
-    counter.addButton = document.querySelector('.add');
-    counter.numberCounter = document.querySelector('.numberCounter');
+    counterApp.deleteButton = document.querySelector('.delete');
+    counterApp.addButton = document.querySelector('.add');
+    counterApp.numberCounter = document.querySelector('.numberCounter');
   },
   render: function(){
-    counter.numberCounter.innerHTML = counter.updatedCounter;
+    counterApp.numberCounter.innerHTML = counterApp.counter;
   },
 
 
   addEventListeners: function(){
-  counter.addButton.addEventListener('click', counter.addNumber);
-  counter.deleteButton.addEventListener('click', counter.deleteNumber);
+  counterApp.addButton.addEventListener('click', counterApp.addNumber);
+  counterApp.deleteButton.addEventListener('click', counterApp.deleteNumber);
   },
   addNumber: function(){
-    counter.updatedCounter += 1;
-    counter.render();
+    counterApp.counter += 1;
+    counterApp.render();
   },
   deleteNumber: function(){
-    counter.updatedCounter -= 1;
-    counter.render();
+    counterApp.counter -= 1;
+    counterApp.render();
   }
 
 
 
 };
-counter.start();
+counterApp.start();
