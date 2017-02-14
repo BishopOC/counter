@@ -9,6 +9,7 @@ var counterApp = {
     counterApp.deleteButton = document.querySelector('.delete');
     counterApp.addButton = document.querySelector('.add');
     counterApp.numberCounter = document.querySelector('.numberCounter');
+    counterApp.resetButton = document.querySelector('.resetButton');
   },
   render: function(){
     counterApp.numberCounter.innerHTML = counterApp.counter;
@@ -18,6 +19,7 @@ var counterApp = {
   addEventListeners: function(){
   counterApp.addButton.addEventListener('click', counterApp.addNumber);
   counterApp.deleteButton.addEventListener('click', counterApp.deleteNumber);
+  counterApp.resetButton.addEventListener('click', counterApp.resetNumber);
   },
   addNumber: function(){
     counterApp.counter += 1;
@@ -26,7 +28,12 @@ var counterApp = {
   deleteNumber: function(){
     counterApp.counter -= 1;
     counterApp.render();
+  },
+  resetNumber: function(){
+    counterApp.counter = 0;
+    counterApp.render();
   }
+
 
 
 

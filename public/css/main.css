@@ -4,11 +4,13 @@ html {
   margin:0;
   padding:0;
 }
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5em;
+  margin-bottom: -4em;
 
 }
 main div button{
@@ -38,6 +40,20 @@ main div button.add {
   outline: none;
   box-shadow: 9px 0px 15px 5px #477684;
 }
+body div button.resetButton {
+  margin-left: 7.8em;
+  margin-top: -7em;
+  width:4em;
+  height: 2em;
+  border-width: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #EAFAFF lightblue #76B7C9 lightblue;
+  font-size: 4em;
+  background: -webkit-linear-gradient( #D6F5F4, mediumturquoise);
+  outline: none;
+  box-shadow: 0px 9px 15px 5px #477684;
+}
 main div button.delete {
   width:2em;
   height: 2em;
@@ -60,6 +76,15 @@ main div button.add:active {
   outline: none;
   box-shadow: none;
 
+}
+div button.resetButton:active {
+  border-width: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #2B5660 #4B8EA0 #91D6D3 #4B8EA0;
+  background: -webkit-linear-gradient(#64AAA8, #9DEAE8);
+  outline: none;
+  box-shadow: none;
 }
 main div button.delete:active {
   border-width: 7px;
