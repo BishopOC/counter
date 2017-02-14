@@ -58,7 +58,7 @@ main div button.add:active {
   border-width: 7px;
   border-radius: 10px;
   border-style: solid;
-  border-color: #4B8EA0 #63B5CC #4B8EA0 #2B5660;
+  border-color: #4B8EA0 #91D6D3 #4B8EA0 #2B5660;
   background: -webkit-linear-gradient(left, #64AAA8, #9DEAE8);
   outline: none;
   box-shadow: none;
@@ -68,7 +68,7 @@ main div button.delete:active {
   border-width: 7px;
   border-radius: 10px;
   border-style: solid;
-  border-color: #4B8EA0 #2B5660 #4B8EA0 #63B5CC;
+  border-color: #4B8EA0 #2B5660 #4B8EA0 #91D6D3;
   background: -webkit-linear-gradient(left, #9DEAE8, #64AAA8);
   outline: none;
   box-shadow: none;
