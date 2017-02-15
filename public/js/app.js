@@ -13,7 +13,10 @@ var counterApp = {
   },
   render: function(){
     counterApp.numberCounter.innerHTML = counterApp.counter;
-  },
+    if(counterApp.counter < 1){
+      counterApp.resetNumber() ;
+    }
+    },
 
 
   addEventListeners: function(){
