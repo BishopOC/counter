@@ -13,9 +13,6 @@ var counterApp = {
   },
   render: function(){
     counterApp.numberCounter.innerHTML = counterApp.counter;
-    if(counterApp.counter < 1){
-      counterApp.resetNumber() ;
-    }
     },
 
 
@@ -29,6 +26,9 @@ var counterApp = {
     counterApp.render();
   },
   deleteNumber: function(){
+    if(counterApp.counter < 1){
+      return;
+    }
     counterApp.counter -= 1;
     counterApp.render();
   },
