@@ -42,9 +42,16 @@ main div button.add {
   outline: none;
   box-shadow: 9px 0px 15px 5px #477684;
 }
+body div button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
 body div button.resetButton {
   margin-left: 7.8em;
-  margin-top: -7em;
+  margin-top: -2em;
   width:4em;
   height: 2em;
   border-width: 7px;
